@@ -124,8 +124,7 @@ window.addEventListener('scroll', () => {
 
 // EmailJS Configuration
 // Initialize EmailJS with your public key
-// IMPORTANT: Replace 'YOUR_PUBLIC_KEY' with your actual EmailJS public key from https://dashboard.emailjs.com/admin/account
-emailjs.init('YOUR_PUBLIC_KEY');
+emailjs.init('knXXTFSSoTKUAYVyi');
 
 // Contact Form Submission
 const contactForm = document.getElementById('contact-form');
@@ -141,8 +140,7 @@ contactForm.addEventListener('submit', function (event) {
     submitButton.disabled = true;
 
     // Send the email using EmailJS
-    // IMPORTANT: Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with your actual EmailJS service and template IDs
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+    emailjs.sendForm('service_qiioa4l', 'template_98l8rb5', this)
         .then(function (response) {
             console.log('SUCCESS!', response.status, response.text);
 
